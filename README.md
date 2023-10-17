@@ -20,6 +20,11 @@
     - Conclusion: The issue likely lies in one or more of the mkdocs-material features.
  
 - Test 4:
-    - Using: Mild `mkdocs.yml` but with the `instant` features disabled.
-    - Result: TBD
-    - Conclusion: TBD
+    - Using: Mild `mkdocs.yml` but with all `instant` features disabled.
+    - Result: Passed; no errors.
+    - Conclusion: The issue stems from the optional `instant` features within mkdocs-material.
+ 
+ - Test 5:
+    - Using: Mild `mkdocs.yml` but with only the base `instant` feature enabled.
+    - Result: TBA
+    - Conclusion: TBA
