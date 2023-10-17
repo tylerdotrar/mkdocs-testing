@@ -35,35 +35,12 @@ home_button3_blurb: This psycho navigates to an interesting table of stuff locat
 # Material Configuration
 theme:
   name: material
-  custom_dir: assets # Contains custom 'home.html' coverpage
+  custom_dir: assets # Overrides folder containing 'home.html'
   
   features:
-    # Page Interaction
-    - content.action.edit # View source code on Github
-    - content.code.copy   # Codeblocks can be copied to clipboard
-    
-    # Optimized Navigation
-    - navigation.indexes          # Implied section 'index.md' files
-    - navigation.tabs             # Static upper section tabs (exist)
-    - navigation.tabs.sticky      # Static upper section tabs (stay)
-    - navigation.top              # 'Back to top' Button when scrolling up
-    - navigation.tracking         # Update URL while scrolling
-    - navigation.footer           # Add 'previous' and 'next' buttons in the footer
-    - navigation.instant          # Keep navigation from reloading
-    - navigation.instant.prefetch # Aid navigation loading times
-    - navigation.instant.progress # Display page loading progress-bar
-    - toc.follow                  # Update navigation while scrolling
-    
-    # Do I want this:
-    - toc.integrate       # Current document contents built into Navigation
-    - navigation.sections # Grouping of directories into sections
-    #- navigation.expand  # Auto-expand all directories/sections
-    
-    # Improve Search Functionality
-    - search.highlight
-    - search.share
-    - search.suggest
-    
+    - navigation.tabs
+    - navigation.tabs.sticky
+
     
   palette:
     # Light Mode
@@ -83,43 +60,7 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to Light Mode
-
-
-# Extensions
-markdown_extensions:
-  - footnotes
-  - attr_list # File Download Support
-  - def_list
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.magiclink
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  
-  # Mermaid Diagram Support
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - toc:
-      permalink: true
-  
-  # Added for Obsidian callout support
-  - nl2br
-  - admonition
-  - pymdownx.details
-  
-
-# Plugins
+        
 plugins:
   - search
-  - roamlinks # Obsidian Style Image Support ![[<attachment_name>]]
-  - callouts
-  - mermaid2:
-      javascript: js/mermaid.min.js 
+  - roamlinks # Obsidian Style Image Support
