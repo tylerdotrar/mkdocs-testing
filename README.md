@@ -1,5 +1,5 @@
 # mkdocs-testing
-- This is a test environment.
+- This is a test environment for troubleshooting my custom coverpage.
 
 ### Test Log:
 ---
@@ -16,5 +16,10 @@
     
 - Test 3:
     - Using: Robust `mkdocs.yml` but with all markdown extensions disabled.
+    - Result: Failed; no change from test 2.
+    - Conclusion: The issue likely lies in one or more of the mkdocs-material features.
+ 
+- Test 4:
+    - Using: Mild `mkdocs.yml` but with the `instant` features disabled.
     - Result: TBD
     - Conclusion: TBD
