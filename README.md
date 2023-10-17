@@ -31,6 +31,11 @@
     
  - Test 6:
     - Usage: Robust `mkdocs.yml` using everything but the `instant.prefetch` feature.
+    - Result: Failed; banner search and lightswitch stopped working after site navigation.
+    - Conclusion: The issue is being created by the `instant.progress` feature.
+        - Error returned in the browser console: `Uncaught ReferenceError: Missing element: expected "[rel=canonical]" to be present`
+    
+ - Test 7:
+    - Usage: Robust `mkdocs.yml` using everything but the `instant.progress` feature.
     - Result: TBA
     - Conclusion: TBA
- 

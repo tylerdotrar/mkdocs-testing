@@ -50,7 +50,7 @@ theme:
     - navigation.tracking         # Update URL while scrolling
     - navigation.footer           # Add 'previous' and 'next' buttons in the footer
     - navigation.instant          # Keep navigation from reloading
-    #- navigation.instant.progress # Display page loading progress-bar
+    - navigation.instant.progress # Display page loading progress-bar
     #- navigation.instant.prefetch # Aid navigation loading times
     - toc.follow                  # Update navigation while scrolling
     
