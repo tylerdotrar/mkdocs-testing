@@ -86,34 +86,34 @@ theme:
 
 
 # Extensions
-#markdown_extensions:
-#  - footnotes
-#  - attr_list # File Download Support
-#  - def_list
-#  - pymdownx.arithmatex:
-#      generic: true
-#  - pymdownx.magiclink
-#  - pymdownx.tasklist:
-#      custom_checkbox: true
-#  - pymdownx.critic
-#  - pymdownx.caret
-#  - pymdownx.keys
-#  - pymdownx.mark
-#  - pymdownx.tilde
+markdown_extensions:
+  - footnotes
+  - attr_list # File Download Support
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   
   # Mermaid Diagram Support
-#  - pymdownx.superfences:
-#      custom_fences:
-#        - name: mermaid
-#          class: mermaid
-#          format: !!python/name:pymdownx.superfences.fence_code_format
-#  - toc:
-#      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
   
   # Added for Obsidian callout support
-#  - nl2br
-#  - admonition
-#  - pymdownx.details
+  - nl2br
+  - admonition
+  - pymdownx.details
   
 
 # Plugins
