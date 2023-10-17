@@ -26,5 +26,11 @@
  
  - Test 5:
     - Using: Mild `mkdocs.yml` but with only the base `instant` feature enabled.
+    - Result: Passed; no errors.
+    - Conclusion: The issue stems from either the `instant.prefetch` or `instant.progress` feature.
+    
+ - Test 6:
+    - Usage: Robust `mkdocs.yml` using everything but the `instant.prefetch` feature.
     - Result: TBA
     - Conclusion: TBA
+ 
