@@ -36,11 +36,16 @@
         - Error returned in the browser console: `Uncaught ReferenceError: Missing element: expected "[rel=canonical]" to be present`
     
  - Test 7:
-    - Usage: Robust `mkdocs.yml` using everything but the `instant.progress` feature.
+    - Usage: Robust `mkdocs.yml` using everything but the `instant.progress` and `instant.prefetch` feature.
     - Result: Failed; no change from test 6.
     - Conclusion: Unexpected.  Revalidating test 5.
     
  - Test 8:
     - Usage: Mild `mkdocs.yml` but with only the base `instant` feature enabled.
+    - Result: Failed; meaning test 5 was improperly handled.
+    - Conclusion: The issue stems from the root `navigation.instant` feature.
+    
+ - Test 9:
+    - Usage: Robust `mkdocs.yml` using everything but `navigation.instant` features.
     - Result: TBA
     - Conclusion: TBA

@@ -49,7 +49,7 @@ theme:
     - navigation.top              # 'Back to top' Button when scrolling up
     - navigation.tracking         # Update URL while scrolling
     - navigation.footer           # Add 'previous' and 'next' buttons in the footer
-    #- navigation.instant          # Keep navigation from reloading
+    - navigation.instant          # Keep navigation from reloading
     #- navigation.instant.prefetch # Aid navigation loading times
     #- navigation.instant.progress # Display page loading progress-bar
     - toc.follow                  # Update navigation while scrolling
@@ -86,34 +86,34 @@ theme:
 
 
 # Extensions
-markdown_extensions:
-  - footnotes
-  - attr_list # File Download Support
-  - def_list
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.magiclink
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
+#markdown_extensions:
+#  - footnotes
+#  - attr_list # File Download Support
+#  - def_list
+#  - pymdownx.arithmatex:
+#      generic: true
+#  - pymdownx.magiclink
+#  - pymdownx.tasklist:
+#      custom_checkbox: true
+#  - pymdownx.critic
+#  - pymdownx.caret
+#  - pymdownx.keys
+#  - pymdownx.mark
+#  - pymdownx.tilde
   
   # Mermaid Diagram Support
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - toc:
-      permalink: true
+#  - pymdownx.superfences:
+#      custom_fences:
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_code_format
+#  - toc:
+#      permalink: true
   
   # Added for Obsidian callout support
-  - nl2br
-  - admonition
-  - pymdownx.details
+#  - nl2br
+#  - admonition
+#  - pymdownx.details
   
 
 # Plugins
