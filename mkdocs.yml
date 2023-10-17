@@ -1,7 +1,7 @@
 site_name: Test Site
 site_author: Tyler McCann
 docs_dir: vault # Root Directory (Obsidian Vault)
-repo_name: tylerdotrar/mkdocs-coverpage
+repo_name: tylerdotrar/mkdocs-testing
 repo_url: https://github.com/tylerdotrar/mkdocs-testing
 
 
