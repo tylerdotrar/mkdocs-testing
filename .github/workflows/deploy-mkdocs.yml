@@ -1,0 +1,26 @@
+# Using the workflow from: "https://github.com/tylerdotrar/mkdocs-deploy-gh-pages"
+name: Publish MkDocs Site
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Deploy MkDocs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deploy docs
+        uses: tylerdotrar/mkdocs-deploy-gh-pages@master
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: mkdocs.yml
+          REQUIREMENTS: requirements.txt
+          #CUSTOM_DOMAIN: rgbwiki.com
+          #CUSTOM_DOCS: vault # Default value: docs
+          # EXTRA_PACKAGES: build-base
+          # GITHUB_DOMAIN: github.myenterprise.com
