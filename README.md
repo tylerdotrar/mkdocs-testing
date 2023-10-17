@@ -37,5 +37,10 @@
     
  - Test 7:
     - Usage: Robust `mkdocs.yml` using everything but the `instant.progress` feature.
+    - Result: Failed; no change from test 6.
+    - Conclusion: Unexpected.  Revalidating test 5.
+    
+ - Test 8:
+    - Usage: Mild `mkdocs.yml` but with only the base `instant` feature enabled.
     - Result: TBA
     - Conclusion: TBA
