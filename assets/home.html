@@ -1,9 +1,13 @@
 <!-- Custom HTML site displayed as the Home chapter -->
 
 {% extends "main.html" %}
+
+{% block extrahead %}
+<link rel="canonical" href="."> <!-- Please fix "navigation.instant" -->
+{% endblock %}
+
 {% block tabs %}
 {{ super() }}
-
 
 <!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
 <style>
