@@ -1,3 +1,4 @@
+# Key Parameters
 site_name: Test Site
 site_author: Tyler McCann
 docs_dir: vault # Root Directory (Obsidian Vault)
@@ -9,8 +10,7 @@ repo_url: https://github.com/tylerdotrar/mkdocs-testing
 home_cover_image: attachments/wizard-posting.png # This path starts at your root mkdocs directory.
 home_tagline: Shadow Wizards Only
 home_description: |
-  This site is an example showcase for my "mkdocs-coverpage" repository. 
-
+  This site is an example showcase for my "mkdocs-coverpage" repository.
 
 # Custom Homepage Button(s)
 home_button1_name: Main Clicky                   # Comment this parameter out to remove the button.
@@ -30,6 +30,9 @@ home_button3_url: Folder3/    # This path starts at your root mkdocs directory.
 home_button3_theme: md-button # Options: "md-button", "md-button md-button--primary"
 home_button3_icon: image      # Options: "people", "gear", "image"
 home_button3_blurb: This psycho navigates to an interesting table of stuff located in "/Folder3/index.md"
+
+# Refresh site when home page is loaded (fix for "navigation.instant" support)
+home_instant_support: true
 
 
 # Material Configuration
@@ -85,7 +88,6 @@ theme:
         name: Switch to Light Mode
 
 
-# Extensions
 markdown_extensions:
   - footnotes
   - attr_list # File Download Support
@@ -101,6 +103,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   
+  # Obsidian Callout Support
+  - nl2br
+  - admonition
+  - pymdownx.details
+  
   # Mermaid Diagram Support
   - pymdownx.superfences:
       custom_fences:
@@ -109,14 +116,8 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
-  
-  # Added for Obsidian callout support
-  - nl2br
-  - admonition
-  - pymdownx.details
-  
 
-# Plugins
+
 plugins:
   - search
   - roamlinks # Obsidian Style Image Support ![[<attachment_name>]]
