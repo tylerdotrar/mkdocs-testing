@@ -47,5 +47,10 @@
     
  - Test 9:
     - Usage: Robust `mkdocs.yml` using everything but `navigation.instant` features.
+    - Result: Passed; no errors.
+    - Conclusion: Need to modify the coverpage to support `navigation.instant`.
+    
+ - Test 10:
+    - Usage: Same as test 9, but with `- navigation.instant` uncommented.
     - Result: TBA
     - Conclusion: TBA

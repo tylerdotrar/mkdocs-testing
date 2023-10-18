@@ -49,7 +49,7 @@ theme:
     - navigation.top              # 'Back to top' Button when scrolling up
     - navigation.tracking         # Update URL while scrolling
     - navigation.footer           # Add 'previous' and 'next' buttons in the footer
-    - navigation.instant          # Keep navigation from reloading
+    #- navigation.instant          # Keep navigation from reloading
     #- navigation.instant.prefetch # Aid navigation loading times
     #- navigation.instant.progress # Display page loading progress-bar
     - toc.follow                  # Update navigation while scrolling
