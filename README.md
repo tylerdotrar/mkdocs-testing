@@ -50,7 +50,9 @@
     - Result: Passed; no errors.
     - Conclusion: Need to modify the coverpage to support `navigation.instant`.
     
+    - Update: The site appears to be working now??? Some weird caching is occuring.
+    
  - Test 10:
     - Usage: Same as test 9, but with `- navigation.instant` uncommented.
-    - Result: TBA
-    - Conclusion: TBA
+    - Result: Failed; banner search and lightswitch stopped working after site navigation.
+    - Conclusion: Need to modify the coverpage to support `navigation.instant`.

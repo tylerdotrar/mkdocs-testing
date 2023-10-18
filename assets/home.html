@@ -352,5 +352,13 @@
 </div>
 
 {% endblock %}
+
+<!-- Added JavaScript to fix "navigation.instant" compatibility -->
+<script>
+    window.addEventListener('load', function() {
+        location.reload();
+    });
+</script>
+
 {% block content %}{% endblock %}
 {% block footer %}{% endblock %}
