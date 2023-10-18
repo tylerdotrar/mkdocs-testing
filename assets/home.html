@@ -1,11 +1,6 @@
 <!-- Custom HTML site displayed as the Home chapter -->
 
 {% extends "main.html" %}
-
-{% block extrahead %}
-<link rel="canonical" href="."> <!-- Please fix "navigation.instant" -->
-{% endblock %}
-
 {% block tabs %}
 {{ super() }}
 
@@ -267,6 +262,7 @@
     </div>
 </section>
 
+
 <!-- Main site box descriptions -->
 <div class="top-hr">
 
@@ -378,13 +374,12 @@
     </div>
 </div>
 
+
 <!-- Added JavaScript for "navigation.instant" support -->
 {%- if config.home_instant_support -%}
 <script>
 document$.subscribe(function() {
-  // Refresh site when the Home Page is loaded, even with instant navigation.
-  location.reload();
-  console.log("Home page reloaded!");
+  console.log("Home page reloaded!")
 })
 </script>
 {%- endif -%}
